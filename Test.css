@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar li {
+    margin-left: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.header {
+    display: flex;
+    color: white;
+    padding: 100px;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.header-content {
+    max-width: 300px;
+    height: 300px;
+}
+.header-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+.header-content p {
+    font-size: small;
+}
+.header-content div{
+    font-size: large;
+}
+form {
+    position: absolute;
+    top: 25%;
+    right: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+form h2 {
+    font-size: 18px;
+    margin-top: 0;
+    
+}
+form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+}
+form button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.connections{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 100px;
+}
+.connections-content{
+    max-width: 300px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    background-color: palegoldenrod;
+}
+.tabs .tab {
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid whitesmoke;
+}
+.tabs .tab:not(:first-child) {
+    background-color: grey;
+}
+.tabs .tab.active {
+    background-color: red;
+}
+.tab-content h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.tab-content p {
+    color: grey;
+    max-width: 500px;
+}
+.content img {
+    margin-top: 20px;
+    width: 20%;
+    height: 20%;
+}
+.download-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.reviews {
+    text-align: center;
+    padding: 50px 0;
+}
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.reviews p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+}
+.review {
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.reviewer i {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 1.5;
+}
+.reviewer div {
+    text-align: left;
+}
+.text {
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+.text::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: gray;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
